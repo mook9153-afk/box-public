@@ -20,7 +20,6 @@ function ThankYouPage() {
           </p>
 
           <div className="contact-card">
-            <div className="contact-card-title">급하신가요?</div>
             <div className="contact-row">
               <span className="contact-icon">
                 <PhoneIcon size={18} />
