@@ -234,6 +234,8 @@ function MatchPage() {
         items.push({ item_type: 'dryice' })
       }
 
+      console.log('submitting items:', items)
+
       const { error: rpcError } = await supabase.rpc('submit_lead', {
         p_phone: phone.trim(),
         p_company_name: companyName.trim() || null,
