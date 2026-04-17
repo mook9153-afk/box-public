@@ -7,12 +7,12 @@ function HomePage() {
 
   const steps = [
     {
-      title: '박스 치수 입력',
-      desc: '현재 사용 중인 박스의 내부 가로·세로·높이만 입력하세요.',
+      title: '스펙 입력',
+      desc: '현재 사용 중인 제품의 정보를 선택하세요.',
     },
     {
       title: '자사 제품 매칭',
-      desc: '입력하신 치수에 맞는 iceasy 규격을 즉시 추천해드립니다.',
+      desc: '입력하신 스펙에 맞는 제품을 즉시 추천해드립니다.',
     },
     {
       title: '담당자 연락',
@@ -43,10 +43,9 @@ function HomePage() {
           <div className="home-logo-tag">박스 & 냉매 전문</div>
         </div>
 
-        <h1 className="hero-headline">박스 규격 1분 매칭</h1>
+        <h1 className="hero-headline">사용 제품 매칭 서비스</h1>
         <p className="hero-sub">
-          사용 중인 박스 치수만 입력하세요. 맞는 자사 제품을 찾아드리고,
-          더 나은 조건을 제안드립니다.
+          사용 중인 제품의 스펙을 입력해주세요. 더 나은 조건을 제안드립니다.
         </p>
 
         <div className="cta-block">
@@ -55,7 +54,7 @@ function HomePage() {
             className="btn-primary"
             onClick={() => navigate('/match')}
           >
-            규격 매칭 시작
+            매칭 시작
           </button>
         </div>
 
