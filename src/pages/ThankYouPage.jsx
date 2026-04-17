@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import Layout from '../components/Layout.jsx'
-import { ChatIcon, CheckIcon, PhoneIcon } from '../components/Icons.jsx'
+import { CheckIcon, PhoneIcon } from '../components/Icons.jsx'
 
 function ThankYouPage() {
   const navigate = useNavigate()
@@ -26,17 +26,8 @@ function ThankYouPage() {
                 <PhoneIcon size={18} />
               </span>
               <div className="contact-body">
-                <span className="contact-label">전화 문의</span>
-                <a href="tel:02-0000-0000">02-0000-0000</a>
-              </div>
-            </div>
-            <div className="contact-row">
-              <span className="contact-icon">
-                <ChatIcon size={18} />
-              </span>
-              <div className="contact-body">
-                <span className="contact-label">카카오톡 상담</span>
-                <span>준비중</span>
+                <span className="contact-label">전화 및 문자 문의</span>
+                <a href="tel:010-4733-7440">010-4733-7440</a>
               </div>
             </div>
           </div>
