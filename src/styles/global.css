@@ -690,6 +690,143 @@ textarea {
   right: 16px;
 }
 
+/* ===== Product picker ===== */
+.product-picker {
+  margin-bottom: 24px;
+}
+
+.product-picker-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 14px;
+}
+
+.product-picker-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+@media (max-width: 480px) {
+  .product-picker-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 16px 8px;
+  background-color: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-card);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease,
+    box-shadow 0.15s ease;
+  user-select: none;
+}
+
+.product-check:hover {
+  border-color: var(--color-primary);
+}
+
+.product-check input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+
+.product-check.is-on {
+  border-color: var(--color-primary);
+  background-color: rgba(201, 123, 92, 0.06);
+  box-shadow: var(--shadow-focus);
+}
+
+.product-check-emoji {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.product-check-label {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.product-check.is-on .product-check-label {
+  color: var(--color-primary);
+}
+
+@media (max-width: 480px) {
+  .product-check {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 14px;
+    padding: 14px 18px;
+  }
+}
+
+/* ===== Radio pill row (icepack) ===== */
+.radio-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.radio-pill {
+  flex: 1 1 auto;
+  min-width: 72px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 14px;
+  background-color: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-button);
+  cursor: pointer;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-text);
+  transition: border-color 0.15s ease, background-color 0.15s ease,
+    color 0.15s ease;
+  user-select: none;
+}
+
+.radio-pill:hover {
+  border-color: var(--color-primary);
+}
+
+.radio-pill input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+
+.radio-pill.is-on {
+  border-color: var(--color-primary);
+  background-color: rgba(201, 123, 92, 0.08);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* ===== Section title with icon ===== */
+.section-title > span[aria-hidden='true'] {
+  margin-right: 6px;
+}
+
+/* ===== Dryice card ===== */
+.dryice-card .info-box {
+  margin-bottom: 0;
+}
+
 .match-block {
   border-radius: var(--radius-input);
   padding: 14px 16px;
