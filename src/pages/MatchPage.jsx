@@ -55,6 +55,7 @@ function MatchPage() {
         .from('products')
         .select('id, name, inner_w, inner_d, inner_h')
         .eq('is_active', true)
+        .in('company', ['음성 공장', '김포 공장'])
       if (cancelled) return
       if (error) {
         console.error('products 조회 실패:', error)
